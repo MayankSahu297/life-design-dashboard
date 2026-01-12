@@ -1,0 +1,203 @@
+{
+    "info": {
+        "name": "Life Design Backend Service",
+        "description": "Growth Journal & Productivity Insights API - Complete collection of all endpoints",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Health",
+            "item": [
+                {
+                    "name": "Root - Service Info",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:8000/",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                ""
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Health Check",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:8000/health",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "health"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Activities",
+            "item": [
+                {
+                    "name": "Create Learning Activity",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"goal_id\": \"career-growth-2024\",\n  \"activity_type\": \"Learning\",\n  \"value\": 120,\n  \"timestamp\": \"2024-01-15T14:30:00Z\"\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:8000/activities",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "activities"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Create Health Activity",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"goal_id\": \"wellness-2024\",\n  \"activity_type\": \"Health\",\n  \"value\": 45,\n  \"timestamp\": \"2024-01-15T08:00:00Z\"\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:8000/activities",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "activities"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Create Fitness Activity",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"goal_id\": \"fitness-2024\",\n  \"activity_type\": \"Fitness\",\n  \"value\": 60,\n  \"timestamp\": \"2024-01-15T18:00:00Z\"\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:8000/activities",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "activities"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Dashboard",
+            "item": [
+                {
+                    "name": "Get Career Growth Dashboard",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:8000/dashboard/career-growth-2024",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "dashboard",
+                                "career-growth-2024"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get Wellness Dashboard",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:8000/dashboard/wellness-2024",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "dashboard",
+                                "wellness-2024"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Insights",
+            "item": [
+                {
+                    "name": "Get Optimization Insights",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:8000/insights/optimization",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8000",
+                            "path": [
+                                "insights",
+                                "optimization"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
