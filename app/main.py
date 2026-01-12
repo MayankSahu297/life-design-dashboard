@@ -57,7 +57,12 @@ app = FastAPI(
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Configure appropriately for production
+    allow_origins=[
+        "https://life-design-dashboard-frontend.vercel.app",  # Production frontend
+        "https://life-design-dashboard-frontend-qhp68epvd.vercel.app",  # Preview deployment
+        "http://localhost:3000",  # Local development
+        "http://127.0.0.1:3000"   # Local development alternative
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
