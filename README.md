@@ -6,75 +6,51 @@ A complete full-stack application featuring a production-ready Python FastAPI ba
 
 ---
 
+## 🌐 Live Deployment
+
+**🎨 Frontend Application:**  
+👉 **https://life-design-dashboard-frontend.vercel.app**
+
+**⚙️ Backend API:**  
+👉 **https://life-design-dashboard.onrender.com**
+
+**📚 API Documentation:**  
+👉 **https://life-design-dashboard.onrender.com/docs**
+
+---
+
 ## 📋 Table of Contents
 
-- [Quick Start](#quick-start)
-- [Overview](#overview)
+- [Live Deployment](#live-deployment)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Architecture](#architecture)
-- [Setup Instructions](#setup-instructions)
-- [Frontend](#frontend)
-- [Deployment](#deployment)
+- [Local Development](#local-development)
 - [API Documentation](#api-documentation)
-- [Example Requests](#example-requests)
-- [Technical Rationale](#technical-rationale)
 - [Project Structure](#project-structure)
-
----
-
-## ⚡ Quick Start
-
-### Run the Complete Application
-
-**1. Start the Backend:**
-```bash
-# Navigate to project directory
-cd "c:\Users\VICTUS\Documents\Technical Assessment The Life Design Backend"
-
-# Install dependencies (if not already done)
-pip install -r requirements.txt
-
-# Run the backend server
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
-
-**2. Start the Frontend:**
-```bash
-# Open a new terminal
-cd "c:\Users\VICTUS\Documents\Technical Assessment The Life Design Backend\frontend"
-
-# Start local server
-python -m http.server 3000
-```
-
-**3. Access the Application:**
-- **Frontend:** http://localhost:3000
-- **Backend API Docs:** http://localhost:8000/docs
-
----
-
-## 🎯 Overview
-
-This backend microservice demonstrates:
-
-✅ **Strong Backend Engineering**: Clean architecture, modular design, type safety  
-✅ **Data Interpretation**: Transforming raw logs into meaningful insights  
-✅ **Scalable Design**: Repository pattern for easy database swapping  
-✅ **Production-Ready**: Comprehensive validation, error handling, documentation
+- [Deployment](#deployment)
 
 ---
 
 ## ✨ Features
 
-### Core Functionality
+### 🎯 Core Functionality
 
 - **📝 Activity Logging**: Track efforts across Learning, Health, Fitness, and Other categories
 - **📊 Goal Dashboards**: Aggregated metrics, activity history, consistency scores
 - **🧠 Smart Insights**: AI-generated recommendations based on behavioral patterns
 - **⚠️ Wellness Monitoring**: Automated alerts for insufficient health activities
 
-### Technical Highlights
+### 🎨 Frontend Highlights
+
+- ✨ **Glassmorphism Design** with backdrop blur effects
+- 🌈 **Gradient Backgrounds** with smooth animations
+- 🌙 **Dark Theme** optimized for extended use
+- 📱 **Fully Responsive** for all devices
+- ⚡ **Micro-animations** for enhanced UX
+- 🎨 **Premium Aesthetics** with vibrant color palettes
+
+### 🛠️ Technical Highlights
 
 - **Type Safety**: Full Pydantic validation and Python 3.10+ type hints
 - **Repository Pattern**: Interface-based storage abstraction
@@ -94,7 +70,7 @@ This backend microservice demonstrates:
 | **Validation** | Pydantic v2 |
 | **Server** | Uvicorn (ASGI) |
 | **Storage** | In-Memory (Repository Pattern) |
-| **Architecture** | Microservice, Modular Design |
+| **Deployment** | Render |
 
 ### Frontend
 | Component | Technology |
@@ -104,6 +80,7 @@ This backend microservice demonstrates:
 | **Design** | Glassmorphism, Gradients, Animations |
 | **Architecture** | Single Page Application (SPA) |
 | **API Integration** | Fetch API |
+| **Deployment** | Vercel |
 
 ---
 
@@ -137,19 +114,19 @@ In-Memory Storage
 
 ---
 
-## 🚀 Setup Instructions
+## 💻 Local Development
 
 ### Prerequisites
 
 - Python 3.10 or higher
 - pip (Python package manager)
 
-### Installation
+### Backend Setup
 
-1. **Clone/Navigate to Project Directory**
+1. **Navigate to Project Directory**
 
 ```bash
-cd "c:\Users\VICTUS\Documents\Technical Assessment The Life Design Backend"
+cd life-design-dashboard
 ```
 
 2. **Create Virtual Environment** (Recommended)
@@ -170,7 +147,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. **Run the Server**
+4. **Run the Backend Server**
 
 ```bash
 # Development mode (auto-reload)
@@ -186,74 +163,23 @@ python -m app.main
 - **Interactive Docs**: http://localhost:8000/docs
 - **Alternative Docs**: http://localhost:8000/redoc
 
----
+### Frontend Setup
 
-## 🎨 Frontend
-
-### Modern Web Application
-
-The Life Design Dashboard features a stunning, production-ready frontend with:
-
-**🎯 Key Features:**
-- ✨ **Glassmorphism Design** with backdrop blur effects
-- 🌈 **Gradient Backgrounds** with smooth animations
-- 🌙 **Dark Theme** optimized for extended use
-- 📱 **Fully Responsive** for all devices
-- ⚡ **Micro-animations** for enhanced UX
-- 🎨 **Premium Aesthetics** with vibrant color palettes
-
-**📊 Three Main Views:**
-
-1. **Dashboard View**
-   - Goal selection and progress tracking
-   - Activity breakdown with animated progress bars
-   - Recent activity timeline
-   - Consistency score and wellness status
-
-2. **Log Activity View**
-   - Beautiful form interface
-   - Visual activity type selection
-   - Real-time validation
-   - Success feedback animations
-
-3. **Insights View**
-   - Circular progress visualization
-   - Wellness status indicators
-   - AI-powered personalized recommendations
-
-### Running the Frontend
+1. **Navigate to Frontend Directory**
 
 ```bash
-# Navigate to frontend directory
 cd frontend
+```
 
-# Start local server
+2. **Start Local Server**
+
+```bash
 python -m http.server 3000
-
-# Access at http://localhost:3000
 ```
 
-### Frontend Structure
+3. **Access the Application**
 
-```
-frontend/
-├── index.html          # Main HTML structure
-├── styles.css          # Modern CSS with glassmorphism
-├── app.js             # JavaScript application logic
-├── README.md          # Frontend documentation
-├── vercel.json        # Vercel deployment config
-└── netlify.toml       # Netlify deployment config
-```
-
-### Design Highlights
-
-- **Color Palette:** Purple-blue gradients with activity-specific colors
-- **Typography:** Inter for body, Outfit for headings (Google Fonts)
-- **Animations:** Smooth transitions, hover effects, loading states
-- **Accessibility:** Semantic HTML, proper ARIA labels
-- **Performance:** Vanilla JS, no heavy frameworks
-
-For detailed frontend documentation, see [`frontend/README.md`](frontend/README.md)
+- **Frontend**: http://localhost:3000
 
 ---
 
@@ -264,6 +190,7 @@ For detailed frontend documentation, see [`frontend/README.md`](frontend/README.
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `GET` | `/` | Health check and service info |
+| `GET` | `/health` | Health check endpoint |
 | `POST` | `/activities` | Log a new activity |
 | `GET` | `/dashboard/{goal_id}` | Get goal dashboard |
 | `GET` | `/insights/optimization` | Get productivity recommendations |
@@ -372,7 +299,7 @@ For detailed frontend documentation, see [`frontend/README.md`](frontend/README.
 **1. Log an Activity**
 
 ```bash
-curl -X POST "http://localhost:8000/activities" \
+curl -X POST "https://life-design-dashboard.onrender.com/activities" \
   -H "Content-Type: application/json" \
   -d '{
     "goal_id": "fitness-2024",
@@ -385,13 +312,13 @@ curl -X POST "http://localhost:8000/activities" \
 **2. Get Goal Dashboard**
 
 ```bash
-curl -X GET "http://localhost:8000/dashboard/fitness-2024"
+curl -X GET "https://life-design-dashboard.onrender.com/dashboard/fitness-2024"
 ```
 
 **3. Get Insights**
 
 ```bash
-curl -X GET "http://localhost:8000/insights/optimization"
+curl -X GET "https://life-design-dashboard.onrender.com/insights/optimization"
 ```
 
 ### Using Python (httpx)
@@ -399,9 +326,11 @@ curl -X GET "http://localhost:8000/insights/optimization"
 ```python
 import httpx
 
+BASE_URL = "https://life-design-dashboard.onrender.com"
+
 # Log activity
 response = httpx.post(
-    "http://localhost:8000/activities",
+    f"{BASE_URL}/activities",
     json={
         "goal_id": "learning-2024",
         "activity_type": "Learning",
@@ -412,21 +341,112 @@ response = httpx.post(
 print(response.json())
 
 # Get dashboard
-dashboard = httpx.get("http://localhost:8000/dashboard/learning-2024")
+dashboard = httpx.get(f"{BASE_URL}/dashboard/learning-2024")
 print(dashboard.json())
 
 # Get insights
-insights = httpx.get("http://localhost:8000/insights/optimization")
+insights = httpx.get(f"{BASE_URL}/insights/optimization")
 print(insights.json())
 ```
 
 ---
 
+## 📁 Project Structure
+
+```
+life-design-dashboard/
+│
+├── app/                             # Backend application
+│   ├── main.py                      # FastAPI application entry point
+│   │
+│   ├── api/                         # API layer (HTTP endpoints)
+│   │   ├── activities.py            # POST /activities
+│   │   ├── dashboard.py             # GET /dashboard/{goal_id}
+│   │   └── insights.py              # GET /insights/optimization
+│   │
+│   ├── models/                      # Domain models
+│   │   └── activity.py              # Activity entity
+│   │
+│   ├── services/                    # Business logic layer
+│   │   ├── analytics_service.py     # Metrics computation
+│   │   └── recommendation_service.py # Insight generation
+│   │
+│   ├── repositories/                # Data access layer
+│   │   ├── activity_repository.py   # Repository interface (ABC)
+│   │   └── in_memory_repository.py  # In-memory implementation
+│   │
+│   ├── schemas/                     # Pydantic schemas
+│   │   └── activity_schema.py       # Request/response models
+│   │
+│   └── utils/                       # Utility functions
+│       └── date_helpers.py          # Date/time operations
+│
+├── frontend/                        # Frontend application
+│   ├── index.html                   # Main HTML structure
+│   ├── styles.css                   # Modern CSS with glassmorphism
+│   ├── app.js                       # JavaScript application logic
+│   ├── vercel.json                  # Vercel deployment config
+│   └── README.md                    # Frontend documentation
+│
+├── requirements.txt                 # Python dependencies
+├── Procfile                         # Heroku/Railway process file
+├── runtime.txt                      # Python version specification
+├── render.yaml                      # Render service configuration
+├── DEPLOYMENT.md                    # Deployment guide
+├── TECHNICAL_DESIGN.md              # Technical design document
+└── README.md                        # This file
+```
+
+---
+
+## 🌐 Deployment
+
+### Live Deployments
+
+**Frontend (Vercel):**
+- Production URL: https://life-design-dashboard-frontend.vercel.app
+- Automatic deployment on push to `main` branch
+- Global CDN distribution
+- HTTPS enabled
+
+**Backend (Render):**
+- Production URL: https://life-design-dashboard.onrender.com
+- Automatic deployment on push to `main` branch
+- API Documentation: https://life-design-dashboard.onrender.com/docs
+- Free tier hosting
+
+### Deployment Configuration
+
+**Frontend (`frontend/vercel.json`):**
+```json
+{
+    "cleanUrls": true,
+    "trailingSlash": false
+}
+```
+
+**Backend (`render.yaml`):**
+```yaml
+services:
+  - type: web
+    name: life-design-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+```
+
+### CORS Configuration
+
+The backend is configured to accept requests from:
+- Production frontend: `https://life-design-dashboard-frontend.vercel.app`
+- Preview deployments: `https://life-design-dashboard-frontend-*.vercel.app`
+- Local development: `http://localhost:3000`
+
+---
+
 ## 🧠 Technical Rationale
 
-### 1. Data Interpretation Logic Design
-
-**Consistency Score Algorithm:**
+### Consistency Score Algorithm
 
 The consistency score uses an asymptotic normalization formula:
 
@@ -443,11 +463,11 @@ score = consecutive_days / (consecutive_days + 7)
   - 14 consecutive days = 0.67
   - 21 consecutive days = 0.75
 
-**Wellness Warning Logic:**
+### Wellness Warning Logic
 
 Checks if total `Health` activity in the last 7 days is below 150 minutes (WHO recommendation).
 
-**Recommendation Engine:**
+### Recommendation Engine
 
 Rule-based system that detects:
 1. Learning/Health imbalance (ratio > 3:1)
@@ -457,114 +477,7 @@ Rule-based system that detects:
 
 ---
 
-### 2. Performance & Scalability
-
-**Current Implementation (In-Memory):**
-
-| Operation | Time Complexity | Space Complexity |
-|-----------|----------------|------------------|
-| Save Activity | O(1) | O(1) |
-| Find by Goal | O(n log n) | O(k) |
-| Consistency Calc | O(n log n) | O(n) |
-| Aggregation | O(n) | O(1) |
-
-Where:
-- `n` = total activities
-- `k` = matching activities for a goal
-
-**Scalability Considerations:**
-
-1. **Efficient Filtering**: Uses list comprehensions and generator expressions
-2. **Sorted Storage**: Activities sorted by timestamp for fast range queries
-3. **Lazy Evaluation**: Metrics computed on-demand, not pre-cached
-4. **Database-Ready**: Repository pattern allows seamless migration to:
-   - PostgreSQL (indexed queries, JSONB aggregation)
-   - MongoDB (document-based storage, aggregation pipeline)
-   - Redis (caching layer for hot data)
-
-**Future Optimizations:**
-- Add caching for frequently accessed dashboards
-- Implement pagination for large activity histories
-- Use database indexes on `goal_id` and `timestamp`
-- Background jobs for weekly wellness reports
-
----
-
-### 3. Service Layer + Repository Pattern
-
-**Why This Architecture?**
-
-✅ **Separation of Concerns**
-- API layer handles HTTP
-- Service layer contains business logic
-- Repository layer manages data access
-
-✅ **Testability**
-- Mock repositories for unit testing
-- Test services independently of storage
-- Integration tests with real repositories
-
-✅ **Flexibility**
-- Swap storage backends without changing business logic
-- Add new services (e.g., NotificationService) easily
-- Extend functionality without modifying existing code
-
-✅ **Maintainability**
-- Clear boundaries between layers
-- Single Responsibility Principle
-- Easy to locate and fix bugs
-
-**Example: Swapping to PostgreSQL**
-
-```python
-# Create new repository implementation
-class PostgresActivityRepository(ActivityRepository):
-    def save(self, activity: Activity) -> Activity:
-        # Use SQLAlchemy or asyncpg
-        pass
-
-# Update main.py
-repository = PostgresActivityRepository(db_connection)
-# All services and APIs work unchanged!
-```
-
----
-
-## 📁 Project Structure
-
-```
-app/
-│── main.py                          # FastAPI application entry point
-│
-│── api/                             # API layer (HTTP endpoints)
-│   ├── activities.py                # POST /activities
-│   ├── dashboard.py                 # GET /dashboard/{goal_id}
-│   └── insights.py                  # GET /insights/optimization
-│
-│── models/                          # Domain models
-│   └── activity.py                  # Activity entity
-│
-│── services/                        # Business logic layer
-│   ├── analytics_service.py         # Metrics computation
-│   └── recommendation_service.py    # Insight generation
-│
-│── repositories/                    # Data access layer
-│   ├── activity_repository.py       # Repository interface (ABC)
-│   └── in_memory_repository.py      # In-memory implementation
-│
-│── schemas/                         # Pydantic schemas
-│   └── activity_schema.py           # Request/response models
-│
-│── utils/                           # Utility functions
-│   └── date_helpers.py              # Date/time operations
-│
-requirements.txt                     # Python dependencies
-README.md                            # This file
-```
-
----
-
-## 🎓 Key Learnings Demonstrated
+## 🎓 Key Features Demonstrated
 
 | Skill Area | Implementation |
 |------------|----------------|
@@ -573,64 +486,24 @@ README.md                            # This file
 | **Business Logic** | Consistency algorithms, wellness detection |
 | **System Design** | Modular architecture, repository pattern |
 | **Data Interpretation** | Raw logs → actionable insights |
+| **Frontend Development** | Modern UI/UX, responsive design, animations |
+| **Full-Stack Integration** | API integration, CORS, deployment |
 | **Code Quality** | Clean naming, documentation, error handling |
 
 ---
 
-## 🌐 Deployment
+## 🚀 Future Enhancements
 
-### Quick Deployment Guide
-
-**Frontend Options:**
-- ✅ **Vercel** (Recommended) - `vercel --prod`
-- ✅ **Netlify** - Drag & drop or CLI
-- ✅ **GitHub Pages** - Free static hosting
-- ✅ **Render** - Static site hosting
-
-**Backend Options:**
-- ✅ **Render** (Recommended) - Free Python hosting
-- ✅ **Railway** - Easy deployment with CLI
-- ✅ **Heroku** - Classic PaaS platform
-
-### Deployment Files Included
-
-- `frontend/vercel.json` - Vercel configuration
-- `frontend/netlify.toml` - Netlify configuration
-- `Procfile` - Heroku/Railway process file
-- `runtime.txt` - Python version specification
-- `render.yaml` - Render service configuration
-
-### Complete Deployment Guide
-
-For detailed step-by-step deployment instructions for all platforms, see:
-
-📖 **[DEPLOYMENT.md](DEPLOYMENT.md)** - Comprehensive deployment guide
-
-This guide includes:
-- Platform-specific instructions
-- Environment configuration
-- CORS setup
-- Post-deployment testing
-- Troubleshooting tips
-
----
-
-## 🚀 Next Steps
-
-**Potential Enhancements:**
+**Potential Improvements:**
 
 1. **Authentication**: Add JWT-based user authentication
 2. **Database**: Migrate to PostgreSQL with Alembic migrations
 3. **Caching**: Implement Redis for dashboard caching
 4. **Testing**: Add comprehensive unit and integration tests
 5. **Monitoring**: Integrate Prometheus metrics and logging
-6. **Deployment**: Dockerize and deploy to AWS/GCP/Azure
-
----
-
-## 📝 License
-
-This project is created as a technical assessment demonstration.
+6. **Mobile App**: React Native or Flutter mobile application
+7. **Social Features**: Share progress with friends
+8. **Gamification**: Achievements, badges, and leaderboards
 
 ---
 
@@ -638,17 +511,18 @@ This project is created as a technical assessment demonstration.
 
 **Mayank Sahu**
 
-Demonstrating backend engineering excellence for SDE roles.
+Demonstrating full-stack engineering excellence.
 
 ---
 
 ## 📞 Support
 
-For questions or feedback, please refer to the interactive API documentation at `/docs` when the server is running.
+For questions or feedback:
+- **API Documentation**: https://life-design-dashboard.onrender.com/docs
+- **GitHub Repository**: https://github.com/MayankSahu297/life-design-dashboard
 
 ---
 
 **Built with ❤️ using FastAPI, Python, HTML, CSS, and JavaScript**
 
 *A complete full-stack demonstration of modern web development and backend engineering excellence.*
-
