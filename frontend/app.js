@@ -1,5 +1,7 @@
 // ===== CONFIGURATION =====
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = window.location.hostname === 'localhost'
+    ? 'http://localhost:8000'  // Local development
+    : 'https://life-design-dashboard.onrender.com';  // Production backend
 
 // ===== STATE MANAGEMENT =====
 let currentView = 'dashboard';
